@@ -1,0 +1,16 @@
+<div class="container text-center">
+	<h3 class="text-center mt-3" style="color: burlywood; background-color: grey; padding: 20px;">
+Remove Product
+</h3>
+		<form [formGroup]="productform">
+		<h3>Select id of product to remove</h3><br>
+		<input type="number" name="id" min="1" formControlName="id" style="margin: 20px;" ><br>
+		<button type="submit" (click)="deleteproduct()" class="btn btn-danger">Remove</button>
+		</form>
+		
+	</div>
+	<ul class="list-group-infos mt-3">
+		<li class="list-group-item mt-3" >
+			<a class="navbar-brand black" routerLink="/welcomeadmin">Go back</a>
+		</li>
+	</ul>

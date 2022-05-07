@@ -1,0 +1,30 @@
+<div class="container">
+    <h3 class="text-center mt-3" style="color: burlywood; background-color: grey; padding: 20px;">
+        Your selected order's details are as follows:
+    </h3>
+    <table id="cus" class="text-center">
+        <tr class="row">
+            <th class="col-sm-2">Id</th>
+            <th class="col-sm-3">Name</th>
+            <th class="col-sm-4">Total available Quantities</th>
+            <th class="col-sm-3">Price</th>
+        <tr class="row">
+            <td class="col-sm-2">{{product.id}}</td>
+            <td class="col-sm-3">{{product.name}}</td>
+            <td class="col-sm-4">{{product.quantity}}</td>
+            <td class="col-sm-3">{{product.price}}</td>
+        </tr>
+        <nav>
+            <h3>Select quantity of the product</h3><br>
+            <input type="number" name="userquantity" max="{{product.quantity}}" [(ngModel)]="userquantity"
+                (ngModelChange)="userquantities()" placeholder="Enter number here:" style="margin: 20px;"><br>
+        </nav>
+        <h2>Total payable amount for selected product is</h2>
+        <h2 class="text-center" style="color: darkcyan;"> {{product.price*userquantity}}</h2>
+        <div class="flex justify-content">
+            <a routerLink="/payment" class="btn btn-success" style="margin: 20px;"> Pay {{product.price *
+                userquantity}}</a>
+            <a routerLink="/food" class=" btn btn-danger">Cancel</a>
+        </div>
+    </table>
+</div>

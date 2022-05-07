@@ -1,0 +1,30 @@
+<div class="container text-center">
+	<h3 class="text-center mt-3" style="color: burlywood; background-color: grey; padding: 20px;">
+		Search product
+</h3>
+		<nav>
+		<h3>Search the name of product</h3><br>
+		<input type="text" name="name" [(ngModel)]="name" (ngModelChange)="nameproduct()" placeholder="Enter name here:" style="margin: 20px;"><br>
+	</nav>
+		
+		
+	</div>
+	<h3>Available products are:</h3>
+	<table id="cus">
+		<tr class="row">
+			<th class="col-sm-3">Id</th>
+			<th class="col-sm-3">Name</th>
+			<th class="col-sm-3">Quantity</th>
+			<th class="col-sm-3">Price</th>
+		<tr class="row" *ngFor="let temp of productobj">
+			<td class="col-sm-3">{{temp.id}}</td>
+			<td class="col-sm-3">{{temp.name}}</td>
+			<td class="col-sm-3">{{temp.quantity}}</td>
+			<td class="col-sm-3">{{temp.price}}</td>
+		</tr>
+	   </table>
+	<ul class="list-group-infos mt-3">
+		<li class="list-group-item mt-3" >
+			<a class="navbar-brand black" routerLink="/welcomeadmin">Go back</a>
+		</li>
+	</ul>

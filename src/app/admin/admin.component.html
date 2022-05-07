@@ -1,0 +1,10 @@
+<div class="wrapper">
+  <div id="formContent">
+    <form [formGroup]="loginform" >
+      <input type="text" id="login" class="fadeIn second" formControlName="name" name="name" placeholder="Id">
+      <input type="password" id="password" class="fadeIn third" formControlName="password" name="password"
+        placeholder="password">
+      <input type="submit" (click)="validateadmin()" class="fourth" value="Log In">
+    </form>
+  </div>
+</div>

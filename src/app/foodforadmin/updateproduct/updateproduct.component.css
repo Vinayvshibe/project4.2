@@ -1,0 +1,28 @@
+#cus {
+	width: 100%;
+	border-collapse: collapse;
+}
+.table2{
+    border: 1px solid black;
+    border-radius: 1px;
+    padding: 20px;
+    margin: 20px auto;
+    
+    text-align: center;
+    width: 50%; 
+}
+th {
+    width: 50%;
+    margin: 10px auto;
+    padding: 10px;
+}
+form {
+    margin: 0px auto;
+    width: 100%;
+}
+input {
+    width: 70%;
+}
+label{
+    width: 70%;
+}

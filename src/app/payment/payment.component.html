@@ -1,0 +1,24 @@
+<div class="container">
+    <h1 class="text-center" style="color: green;">
+        Payment Succussed !
+    </h1>
+    <h3 class="text-center mt-3" style="color: burlywood; background-color: grey; padding: 20px;">
+        Details of the order 
+    </h3>
+    <table id="cus" class="text-center">
+        <tr class="row">
+            <th class="col-sm-2">Id</th>
+            <th class="col-sm-3">Name</th>
+            <th class="col-sm-3">Price of unit quantity</th>
+            <th class="col-sm-2">Total Quantities</th>
+            <th class="col-sm-2">Paid amount</th>
+        <tr class="row">
+            <td class="col-sm-2">{{product.id}}</td>
+            <td class="col-sm-3">{{product.name}}</td>
+            <td class="col-sm-3">{{product.price}}</td>
+            <td class="col-sm-2">{{userquantity}}</td>
+            <td class="col-sm-2">{{product.price*userquantity}}</td>
+        </tr>
+       
+    </table>
+</div>

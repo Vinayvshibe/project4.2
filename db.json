@@ -1,0 +1,74 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "name": "admin",
+      "password": "admin@12"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "name": "Kaju kari",
+      "price": 180,
+      "quantity": 10
+    },
+    {
+      "id": 2,
+      "name": "Kaju masala",
+      "price": 260,
+      "quantity": 12
+    },
+    {
+      "id": 3,
+      "name": "Paneer masala",
+      "price": 180,
+      "quantity": 12
+    },
+    {
+      "id": 5,
+      "name": "Chicken Biryani",
+      "price": 200,
+      "quantity": 20
+    },
+    {
+      "id": 6,
+      "name": "Chicken Biryani (half)",
+      "price": 120,
+      "quantity": 26
+    },
+    {
+      "id": 7,
+      "name": "Mutton Biryani (half)",
+      "price": 320,
+      "quantity": 18
+    },
+    {
+      "id": 8,
+      "name": "Mutton Biryani ",
+      "price": 460,
+      "quantity": 10
+    },
+    {
+      "id": 9,
+      "name": "Butter Chicken",
+      "price": 200,
+      "quantity": 24
+    },
+    {
+      "id": 10,
+      "name": "Mix Veg",
+      "price": 140,
+      "quantity": 24
+    },
+    {
+      "id": 11,
+      "name": "Veg Biryani",
+      "price": 140,
+      "quantity": 20
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

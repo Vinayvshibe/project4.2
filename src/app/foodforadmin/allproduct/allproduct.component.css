@@ -1,0 +1,45 @@
+#cus {
+	width: 100%;
+	border-collapse: collapse;
+	margin: 20px;
+}
+.table2{
+    border: 1px solid black;
+    border-radius: 1px;
+    padding: 20px;
+    margin: 20px auto;
+    
+    text-align: center;
+    width: 50%; 
+}
+table{
+	border: 1px solid black;
+	width: 70%;
+}
+th{
+	border: 1px solid black;
+	background-color: bisque;
+}
+td{
+	border: 1px solid black;
+}
+/* th {
+    width: 50%;
+    margin: 10px auto;
+    padding: 10px;
+}
+td {
+    width: 50%;
+    margin: 10px auto;
+    padding: 10px;
+}
+form {
+    margin: 0px auto;
+    width: 100%;
+}
+input {
+    width: 70%;
+}
+label{
+    width: 70%;
+} */

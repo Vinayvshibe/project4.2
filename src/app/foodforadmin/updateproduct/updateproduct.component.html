@@ -1,0 +1,36 @@
+<div class="container">
+    <h3 class="text-center mt-3" style="color: burlywood; background-color: grey; padding: 20px;">
+        Update Product
+    </h3>
+    <form [formGroup]="productform">
+        <table class="table2"  >
+            <tr>
+                <th><label for="name">Id:</label></th>
+                <th><input type="number" name="id" min="1" formControlName="id" placeholder="Enter id here:"></th>
+            </tr>
+            <tr>
+                <th><label for="name">Name:</label></th>
+                <th><input type="text" name="name" formControlName="name" placeholder="Enter name here:"></th>
+            </tr>
+            
+            <tr>
+                <th><label for="price">Price:</label></th>
+                <th><input type="number" name="price" formControlName="price" placeholder="Enter price:"></th>
+            </tr>
+            <tr>
+                <th><label for="quantity">Quantity:</label></th>
+                <th><input type="number" name="quantity" formControlName="quantity" placeholder="Enter Quantity:"></th>
+            </tr>
+            <tr>
+                <th><input class="btn btn-success" type="submit" (click)="updateproduct()" value="Update"></th>
+                <th><input class="btn btn-primary" type="reset" value="Reset"></th>
+            </tr>
+        </table>
+    </form>
+    
+    <ul class="list-group-infos mt-3">
+        <li class="list-group-item mt-3" >
+            <a class="navbar-brand black" routerLink="/welcomeadmin">Go back</a>
+        </li>
+    </ul>
+</div>
